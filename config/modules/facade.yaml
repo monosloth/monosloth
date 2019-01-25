@@ -17,3 +17,11 @@ facade.logger:
 facade.app:
   module: monosloth.facade
   class: AppFacade
+
+facade.event:
+  module: monosloth.facade
+  class: EventFacade
+
+facade.register:
+  module: monosloth.facade
+  class: RegisterFacade
