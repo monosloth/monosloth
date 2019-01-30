@@ -1,0 +1,7 @@
+cache.array:
+  module: monosloth.cache
+  class: ArrayCache
+
+cache.redis:
+  module: monosloth.cache
+  class: RedisCache
