@@ -25,3 +25,7 @@ facade.event:
 facade.register:
   module: monosloth.facade
   class: RegisterFacade
+
+facade.environment:
+  module: monosloth.facade
+  class: EnvironmentFacade

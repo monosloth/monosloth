@@ -17,3 +17,7 @@ singleton.dispatcher:
 singleton.event:
   module: monosloth.singleton
   class: Event
+
+singleton.environment:
+  module: monosloth.singleton
+  class: Environment

@@ -6,3 +6,4 @@ kernel:
     - provider.decorator
     - provider.facade
     - provider.cache
+    - provider.environment
