@@ -1,0 +1,3 @@
+factory.redis:
+  module: monosloth.factory
+  class: RedisFactory

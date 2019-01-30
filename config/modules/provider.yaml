@@ -21,8 +21,6 @@ provider.facade:
 provider.cache:
   module: monosloth.provider
   class: CacheProvider
-  dependencies:
-    - cache.array
 
 provider.environment:
   module: monosloth.provider

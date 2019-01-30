@@ -5,3 +5,4 @@ cache.array:
 cache.redis:
   module: monosloth.cache
   class: RedisCache
+  factory: factory.redis

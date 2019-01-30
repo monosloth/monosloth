@@ -2,8 +2,8 @@ kernel:
   module: monosloth
   class: Kernel
   dependencies:
+    - provider.environment
     - provider.config
     - provider.decorator
     - provider.facade
     - provider.cache
-    - provider.environment
