@@ -1,3 +1,7 @@
 factory.redis:
   module: monosloth.factory
   class: RedisFactory
+
+factory.mysql:
+  module: monosloth.factory
+  class: MysqlFactory

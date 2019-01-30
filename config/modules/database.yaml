@@ -1,0 +1,4 @@
+database.mysql:
+  module: monosloth.database
+  class: MysqlDatabase
+  factory: factory.mysql

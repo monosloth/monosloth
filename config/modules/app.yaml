@@ -6,4 +6,5 @@ kernel:
     - provider.config
     - provider.decorator
     - provider.facade
+    - provider.database
     - provider.cache

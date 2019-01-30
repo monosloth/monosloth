@@ -25,3 +25,7 @@ provider.cache:
 provider.environment:
   module: monosloth.provider
   class: EnvironmentProvider
+
+provider.database:
+  module: monosloth.provider
+  class: DatabaseProvider
