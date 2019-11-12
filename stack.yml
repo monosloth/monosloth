@@ -1,0 +1,38 @@
+version: '3'
+services:
+  app:
+    image: 'monosloth'
+    restart: always
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  redis:
+    image: 'redis'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.4.3
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:5.4.3
+    environment:
+      - "ELASTICSEARCH_URL=http://elasticsearch:9200"
+    depends_on:
+      - elasticsearch
+    ports:
+      - "8081:8080"
+
+  vizualizer:
+    image: dockersamples/visualizer
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    ports:
+      - "8080:8080"
