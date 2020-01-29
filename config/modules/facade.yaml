@@ -29,3 +29,7 @@ facade.register:
 facade.environment:
   module: monosloth.facade
   class: EnvironmentFacade
+
+facade.command:
+  module: monosloth.facade
+  class: CommandFacade

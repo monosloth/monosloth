@@ -1,3 +1,24 @@
 parser.key:
   module: monosloth.service.parser
-  class: KeyParser
+  class: KeyParser 
+
+parser.command:
+  module: monosloth.service.parser
+  class: CommandParser
+
+input:
+  module: monosloth.service.io
+  class: InputReader
+  dependencies:
+    - parser.command
+  methods:
+    - read
+
+output:
+  module: monosloth.service.io
+  class: OutputWriter
+  methods:
+    - set_colours:
+      - :95
+      - :93
+      - :91

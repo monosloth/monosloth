@@ -33,7 +33,7 @@ services:
   grafana:
     image: grafana/grafana
     ports:
-      = "8082:80"
+      - "8082:80"
 
   vizualizer:
     image: dockersamples/visualizer

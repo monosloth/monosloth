@@ -21,3 +21,11 @@ singleton.event:
 singleton.environment:
   module: monosloth.singleton
   class: Environment
+
+singleton.command:
+  module: monosloth.singleton
+  class: Command
+  methods:
+    - set_streams:
+      - input
+      - output

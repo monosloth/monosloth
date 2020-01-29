@@ -17,6 +17,7 @@ provider.facade:
     - facade.resolve
     - facade.app
     - facade.environment
+    - facade.command
 
 provider.cache:
   module: monosloth.provider
@@ -29,3 +30,9 @@ provider.environment:
 provider.database:
   module: monosloth.provider
   class: DatabaseProvider
+
+provider.command:
+  module: monosloth.provider
+  class: CommandProvider
+  dependencies:
+    - commands.inspire
