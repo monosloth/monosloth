@@ -17,7 +17,7 @@ provider.facade:
     - facade.resolve
     - facade.app
     - facade.environment
-    - facade.command
+    - facade.dispatch
 
 provider.cache:
   module: monosloth.provider

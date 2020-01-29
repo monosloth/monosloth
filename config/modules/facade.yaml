@@ -30,6 +30,6 @@ facade.environment:
   module: monosloth.facade
   class: EnvironmentFacade
 
-facade.command:
+facade.dispatch:
   module: monosloth.facade
-  class: CommandFacade
+  class: DispatchFacade
