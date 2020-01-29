@@ -18,6 +18,7 @@ provider.facade:
     - facade.app
     - facade.environment
     - facade.dispatch
+    - facade.call
 
 provider.cache:
   module: monosloth.provider

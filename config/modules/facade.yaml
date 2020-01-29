@@ -33,3 +33,7 @@ facade.environment:
 facade.dispatch:
   module: monosloth.facade
   class: DispatchFacade
+
+facade.call:
+  module: monosloth.facade
+  class: CallFacade
